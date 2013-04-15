@@ -23,7 +23,9 @@ public class HashTables {
 	}
 
 	static class DirectAddressTable {
-		Object[] table = new Object[100]; // lots of space wasted
+		Object[] table = new Object[100];
+
+		// lots of space wasted
 
 		public void put(int key, Object person) { // only numeric key supported
 			table[key] = person;
